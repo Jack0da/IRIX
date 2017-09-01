@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo apt install w3m wordgrinder lolcat festival 
+echo "hello" | festival --tts
+echo "hello" | lolcat

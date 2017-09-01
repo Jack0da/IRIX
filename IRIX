@@ -1,0 +1,36 @@
+#/bin/bash
+echo "X          X
+ X        X
+  X      X
+   X    X
+    X  X
+     XX
+    X  X
+   X    X
+  X      X
+ X        X
+X          X" | lolcat
+
+while [ 1 == 1 ]
+do
+# Put your name under here!
+NAME='Jack'
+alias web='w3m'
+alias write='wordgrinder'
+open=' '
+echo "What is your command, $NAME?" | lolcat
+echo "What is your command, $NAME? (always lowercase, please)" | festival --tts
+echo "INPUT:" | lolcat 
+read X 
+if [[ $X == "who is siri" ]]
+then
+echo "An excuse for apple users to buy expensive, nearly useless products." | lolcat
+echo "An excuse for apple users to buy expensive, nearly useless products." | festival --tts
+elif [[ $X == "nano IRIX" ]] || [[ $X == "vi IRIX" ]]
+then 
+echo "Please don't edit me!" | lolcat
+echo "Please don't edit me!" | festival --tts
+else
+$X
+fi
+done
